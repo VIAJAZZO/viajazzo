@@ -1,93 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Términos y Condiciones - Viajazzo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones - ViajaZZo</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fuente moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="logo">Viajazzo</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="terminos.html" class="active">Términos y Condiciones</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero hero-small">
-        <div class="hero-content">
-            <h1>Términos y Condiciones</h1>
-        </div>
+  <!-- Navegación (igual que en el resto de la web) -->
+  <header>
+    <div class="navbar">
+      <div class="logo">ViajaZZo</div>
+      <!-- Checkbox para menú responsive -->
+      <input type="checkbox" id="toggle" class="toggle-checkbox">
+      <label for="toggle" class="toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="terminos.html">Términos y Condiciones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Contenido de Términos y Condiciones -->
+  <section class="terms">
+    <div class="container terms-content">
+      <h1>Términos y Condiciones</h1>
+      
+      <h2>1. Introducción</h2>
+      <p>
+        Bienvenido a ViajaZZo. El presente documento establece los términos y condiciones (en adelante, “Términos”) que regirán el acceso y uso de la aplicación Viajazzo, cuyo objetivo es la generación automática de vídeos y su posterior subida a las plataformas TikTok, Instagram y YouTube. Al aceptar estos Términos, los desarrolladores y usuarios (incluyendo, sin limitarse a, TikTok Developers e Instagram Developers) manifiestan su conformidad con las disposiciones aquí establecidas.
+      </p>
+      
+      <h2>2. Aceptación de los Términos</h2>
+      <p>
+        El acceso, registro y uso de Viajazzo implica la aceptación incondicional y sin reservas de estos Términos. En caso de no estar de acuerdo con alguna de las disposiciones, se deberá abstener de utilizar la aplicación.
+      </p>
+      
+      <h2>3. Definiciones</h2>
+      <p><strong>Viajazzo:</strong> La aplicación diseñada para generar y subir vídeos de forma automática a las redes sociales.</p>
+      <p><strong>Usuario:</strong> Cualquier persona física o jurídica que acceda y/o haga uso de la aplicación.</p>
+      <p><strong>Plataformas de Redes Sociales:</strong> TikTok, Instagram y YouTube, en adelante referidas como “Redes Sociales”.</p>
+      <p><strong>Contenido:</strong> Los vídeos y cualquier material generado y/o subido a través de la aplicación.</p>
+      <p><strong>Desarrollador:</strong> En este contexto, tanto TikTok Developers, Instagram Developers u otros profesionales que integren y utilicen los servicios de Viajazzo.</p>
+      
+      <h2>4. Descripción del Servicio</h2>
+      <p>Viajazzo es una herramienta que:</p>
+      <ul>
+        <li>Genera vídeos de forma automática a partir de parámetros preestablecidos o contenidos integrados.</li>
+        <li>Permite la subida automática de dichos vídeos a las Redes Sociales mediante las API oficiales y mecanismos de integración que estas plataformas ponen a disposición.</li>
+        <li>Facilita la gestión, programación y monitoreo de los contenidos subidos en conformidad con las políticas y lineamientos de cada red social.</li>
+      </ul>
+      
+      <h2>5. Condiciones de Uso</h2>
+      
+      <h3>5.1. Requisitos de Acceso y Registro</h3>
+      <p>
+        Para hacer uso de Viajazzo, el Usuario deberá registrarse proporcionando datos veraces y actualizados.<br>
+        El acceso a las funcionalidades de generación y subida automática de vídeos requerirá la vinculación de las cuentas oficiales de las Redes Sociales, conforme a los procedimientos y autorizaciones establecidos por cada plataforma.
+      </p>
+      
+      <h3>5.2. Uso Adecuado</h3>
+      <p>
+        El Usuario se compromete a utilizar Viajazzo de conformidad con la ley, la moral, el orden público y las políticas de uso de cada una de las Redes Sociales.<br>
+        Queda terminantemente prohibido el uso del servicio para difundir contenidos que vulneren derechos de terceros, promuevan actividades ilegales, inciten al odio o violen las normas comunitarias de las plataformas.
+      </p>
+      
+      <h3>5.3. Integraciones y Permisos</h3>
+      <p>
+        La utilización de las API y herramientas de integración de TikTok, Instagram y YouTube estará sujeta a la aceptación y cumplimiento de los lineamientos y políticas propias de cada red.<br>
+        Viajazzo no se hace responsable de las restricciones, suspensiones o bloqueos que pudieran aplicarse por parte de las Redes Sociales debido a incumplimientos o violaciones a sus normativas.
+      </p>
+      
+      <h2>6. Obligaciones y Responsabilidades del Usuario</h2>
+      <p>
+        <strong>Veracidad y Legalidad del Contenido:</strong> El Usuario garantiza que el contenido generado y subido a través de Viajazzo es de su propiedad o cuenta con las debidas autorizaciones y derechos de uso.<br>
+        <strong>Actualización de Datos:</strong> Es responsabilidad del Usuario mantener actualizados sus datos de registro y credenciales de acceso a las Redes Sociales.<br>
+        <strong>Uso de Herramientas de Integración:</strong> El Usuario se compromete a utilizar correctamente los mecanismos de integración ofrecidos y a notificar de inmediato cualquier incidencia o uso indebido de sus credenciales.
+      </p>
+      
+      <h2>7. Propiedad Intelectual</h2>
+      <p>
+        Todos los derechos, títulos e intereses relacionados con la aplicación, su software, diseño, logotipos y demás elementos gráficos o técnicos son propiedad exclusiva de Viajazzo o de sus licenciantes.<br>
+        Queda prohibida la reproducción, distribución o modificación total o parcial de la aplicación o de sus componentes sin la autorización expresa y por escrito de Viajazzo.
+      </p>
+      
+      <h2>8. Confidencialidad y Protección de Datos</h2>
+      <p>
+        Viajazzo se compromete a proteger la confidencialidad y seguridad de los datos personales facilitados por el Usuario, conforme a lo establecido en la legislación vigente en materia de protección de datos.<br>
+        La utilización de las credenciales y permisos de acceso a las Redes Sociales se regirá también por las políticas de privacidad y términos de uso de cada plataforma.
+      </p>
+      
+      <h2>9. Limitación de Responsabilidad</h2>
+      <p>
+        Viajazzo actúa únicamente como una herramienta de automatización y no asume responsabilidad por el contenido subido, ni por las posibles sanciones, bloqueos o restricciones que puedan ser impuestas por las Redes Sociales.<br>
+        La aplicación se ofrece “tal cual”, sin garantías de ningún tipo, explícitas o implícitas, en cuanto a su funcionamiento, disponibilidad o idoneidad para fines específicos.<br>
+        En ningún caso, Viajazzo será responsable de daños directos, indirectos, incidentales o consecuentes derivados del uso o la imposibilidad de uso del servicio.
+      </p>
+      
+      <h2>10. Modificaciones de los Términos y del Servicio</h2>
+      <p>
+        Viajazzo se reserva el derecho de modificar o actualizar estos Términos en cualquier momento. Las modificaciones serán publicadas en la aplicación y, de ser significativas, se notificará a los Usuarios.<br>
+        El uso continuado del servicio después de la publicación de cambios implicará la aceptación de los Términos modificados.
+      </p>
+      
+      <h2>11. Terminación del Servicio</h2>
+      <p>
+        Viajazzo podrá, a su discreción y sin necesidad de previo aviso, suspender o terminar el acceso del Usuario en caso de violación de estos Términos o de las políticas de uso de las Redes Sociales.<br>
+        En caso de terminación, el Usuario deberá cesar inmediatamente el uso de la aplicación y eliminar cualquier copia del software, en la medida de lo posible.
+      </p>
+      
+      <h2>12. Legislación Aplicable y Jurisdicción</h2>
+      <p>
+        Estos Términos se regirán e interpretarán de conformidad con la legislación vigente en España.<br>
+        Para la resolución de cualquier controversia derivada del presente acuerdo, las partes se someten a los tribunales competentes de Valencia, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.
+      </p>
+      
+      <h2>13. Contacto</h2>
+      <p>
+        Para cualquier duda, sugerencia o reclamo relacionado con estos Términos o con el funcionamiento de Viajazzo, el Usuario podrá contactar al equipo de soporte a través del siguiente correo electrónico: <a href="mailto:viajazzo.esp@gmail.com">viajazzo.esp@gmail.com</a> o mediante el formulario de contacto disponible en la aplicación.<br>
+        Al utilizar la aplicación Viajazzo, usted confirma que ha leído, comprendido y acepta en su totalidad estos Términos y Condiciones. En el caso de ser desarrollador (TikTok Developers, Instagram Developers, etc.), la aceptación de estos términos es condición indispensable para la integración y uso de la herramienta de subida automática de vídeos.
+      </p>
+      
+      <p><strong>Fecha de última actualización:</strong> 03/03/2025</p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <section class="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:contacto@viajazzo.com">contacto@viajazzo.com</a></p>
     </section>
-
-    <main class="content">
-        <h2>1. Introducción</h2>
-        <p>Bienvenido a Viajazzo. El presente documento establece los términos y condiciones (en adelante, “Términos”) que regirán el acceso y uso de la aplicación Viajazzo, cuyo objetivo es la generación automática de vídeos y su posterior subida a las plataformas TikTok, Instagram y YouTube. Al aceptar estos Términos, los desarrolladores y usuarios (incluyendo, sin limitarse a, TikTok Developers e Instagram Developers) manifiestan su conformidad con las disposiciones aquí establecidas.</p>
-
-        <h2>2. Aceptación de los Términos</h2>
-        <p>El acceso, registro y uso de Viajazzo implica la aceptación incondicional y sin reservas de estos Términos. En caso de no estar de acuerdo con alguna de las disposiciones, se deberá abstener de utilizar la aplicación.</p>
-
-        <h2>3. Definiciones</h2>
-        <ul>
-            <li><strong>Viajazzo:</strong> La aplicación diseñada para generar y subir vídeos de forma automática a las redes sociales.</li>
-            <li><strong>Usuario:</strong> Cualquier persona física o jurídica que acceda y/o haga uso de la aplicación.</li>
-            <li><strong>Plataformas de Redes Sociales:</strong> TikTok, Instagram y YouTube, en adelante referidas como “Redes Sociales”.</li>
-            <li><strong>Contenido:</strong> Los vídeos y cualquier material generado y/o subido a través de la aplicación.</li>
-            <li><strong>Desarrollador:</strong> En este contexto, tanto TikTok Developers, Instagram Developers u otros profesionales que integren y utilicen los servicios de Viajazzo.</li>
-        </ul>
-
-        <h2>4. Descripción del Servicio</h2>
-        <p>Viajazzo es una herramienta que:</p>
-        <ul>
-            <li>Genera vídeos de forma automática a partir de parámetros preestablecidos o contenidos integrados.</li>
-            <li>Permite la subida automática de dichos vídeos a las Redes Sociales mediante las API oficiales y mecanismos de integración que estas plataformas ponen a disposición.</li>
-            <li>Facilita la gestión, programación y monitoreo de los contenidos subidos en conformidad con las políticas y lineamientos de cada red social.</li>
-        </ul>
-
-        <h2>5. Condiciones de Uso</h2>
-        <h3>5.1. Requisitos de Acceso y Registro</h3>
-        <p>Para hacer uso de Viajazzo, el Usuario deberá registrarse proporcionando datos veraces y actualizados.</p>
-
-        <h3>5.2. Uso Adecuado</h3>
-        <p>El Usuario se compromete a utilizar Viajazzo de conformidad con la ley, la moral, el orden público y las políticas de uso de cada una de las Redes Sociales.</p>
-
-        <h3>5.3. Integraciones y Permisos</h3>
-        <p>La utilización de las API y herramientas de integración de TikTok, Instagram y YouTube estará sujeta a la aceptación y cumplimiento de los lineamientos y políticas propias de cada red.</p>
-
-        <h2>6. Obligaciones y Responsabilidades del Usuario</h2>
-        <p>El Usuario garantiza que el contenido generado y subido a través de Viajazzo es de su propiedad o cuenta con las debidas autorizaciones y derechos de uso.</p>
-
-        <h2>7. Propiedad Intelectual</h2>
-        <p>Todos los derechos, títulos e intereses relacionados con la aplicación, su software, diseño, logotipos y demás elementos gráficos o técnicos son propiedad exclusiva de Viajazzo o de sus licenciantes.</p>
-
-        <h2>8. Confidencialidad y Protección de Datos</h2>
-        <p>Viajazzo se compromete a proteger la confidencialidad y seguridad de los datos personales facilitados por el Usuario.</p>
-
-        <h2>9. Limitación de Responsabilidad</h2>
-        <p>Viajazzo actúa únicamente como una herramienta de automatización y no asume responsabilidad por el contenido subido, ni por las posibles sanciones, bloqueos o restricciones que puedan ser impuestas por las Redes Sociales.</p>
-
-        <h2>10. Modificaciones de los Términos y del Servicio</h2>
-        <p>Viajazzo se reserva el derecho de modificar o actualizar estos Términos en cualquier momento.</p>
-
-        <h2>11. Terminación del Servicio</h2>
-        <p>Viajazzo podrá, a su discreción y sin necesidad de previo aviso, suspender o terminar el acceso del Usuario en caso de violación de estos Términos.</p>
-
-        <h2>12. Legislación Aplicable y Jurisdicción</h2>
-        <p>Estos Términos se regirán e interpretarán de conformidad con la legislación vigente en España.</p>
-
-        <h2>13. Contacto</h2>
-        <p>Para cualquier duda, sugerencia o reclamo relacionado con estos Términos, el Usuario podrá contactar a través del siguiente correo electrónico:</p>
-        <p><strong>Email:</strong> <a href="mailto:viajazzo.esp@gmail.com">viajazzo.esp@gmail.com</a></p>
-        <p><strong>Fecha de última actualización:</strong> 03/03/2025</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Viajazzo. Todos los derechos reservados.</p>
-    </footer>
-
+  </footer>
 </body>
 </html>
