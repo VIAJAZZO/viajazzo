@@ -3,119 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ViajaZZo - Ofertas de viajes exclusivas para destinos inolvidables. Descubre experiencias únicas y vive el viaje de tus sueños.">
-  <title>ViajaZZo - Ofertas de Viajes</title>
+  <title>ViajaZZo - Videos de Ofertas de Viaje</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Fuente moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Cabecera y navegación principal -->
+  <!-- Navegación Moderna -->
   <header>
-    <div class="container header-container">
-      <h1 class="logo">ViajaZZo</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#ofertas">Ofertas</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+    <div class="navbar">
+      <div class="logo">ViajaZZo</div>
+      <!-- Checkbox para menú responsive -->
+      <input type="checkbox" id="toggle" class="toggle-checkbox">
+      <label for="toggle" class="toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar-menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="terminos.html">Términos y Condiciones</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sección principal (Hero) -->
-  <section class="hero">
-    <div class="container">
-      <h2>Descubre destinos increíbles</h2>
-      <p>Ofertas exclusivas para viajes inolvidables. ¡Vive la experiencia!</p>
-      <a href="#ofertas" class="cta-button">Ver Ofertas</a>
+  <!-- Banner Moderno y Responsive -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>ViajaZZo</h1>
+      <p>Generamos y subimos videos de ofertas de viaje a tus redes sociales favoritas</p>
     </div>
   </section>
 
-  <!-- Contenido principal -->
-  <main>
-    <!-- Sección de Ofertas -->
-    <section id="ofertas" class="offers">
-      <div class="container">
-        <h2>Ofertas Destacadas</h2>
-        <div class="offer-grid">
-          <article class="offer">
-            <img src="https://via.placeholder.com/400x250" alt="Destino Playa Paradisíaca">
-            <h3>Playa Paradisíaca</h3>
-            <p>Disfruta de las mejores playas del Caribe con paquetes todo incluido.</p>
-            <a href="#" class="cta-button">Más Detalles</a>
-          </article>
-          <article class="offer">
-            <img src="https://via.placeholder.com/400x250" alt="Destino Aventura en la Montaña">
-            <h3>Aventura en la Montaña</h3>
-            <p>Explora rutas de montaña y vive aventuras únicas en la naturaleza.</p>
-            <a href="#" class="cta-button">Más Detalles</a>
-          </article>
-          <article class="offer">
-            <img src="https://via.placeholder.com/400x250" alt="Destino Ciudad Histórica">
-            <h3>Ciudad Histórica</h3>
-            <p>Descubre la historia y cultura en ciudades llenas de encanto.</p>
-            <a href="#" class="cta-button">Más Detalles</a>
-          </article>
+  <!-- Sección Acerca de -->
+  <section class="description">
+    <div class="container">
+      <h2>Acerca de ViajaZZo</h2>
+      <p>
+        ViajaZZo es la solución definitiva para creadores y agencias que desean promocionar ofertas de viaje. Utilizamos inteligencia artificial para generar videos atractivos y los subimos automáticamente a TikTok, Instagram y YouTube, optimizando su alcance y visibilidad.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Características -->
+  <section class="features">
+    <div class="container">
+      <h2>Características Destacadas</h2>
+      <ul>
+        <li>Generación automática de videos de ofertas de viaje</li>
+        <li>Optimización para múltiples plataformas sociales</li>
+        <li>Subida automatizada a TikTok, Instagram y YouTube</li>
+        <li>Interfaz intuitiva y diseño moderno</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección de Plataformas Soportadas -->
+  <section class="platforms">
+    <div class="container">
+      <h2>Plataformas Soportadas</h2>
+      <p>Sube tus videos directamente a:</p>
+      <div class="platform-list">
+        <div class="platform">
+            <img src="https://th.bing.com/th?id=OIP.yGLxAr_MQnnG-UadX1zroAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="TikTok">
+            <h3>TikTok</h3>
+            </div>
+            <div class="platform">
+            <img src="data:image/jpeg;base64,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" alt="Instagram">
+            <h3>Instagram</h3>
+            </div>
+            <div class="platform">
+            <img src="https://th.bing.com/th?id=OIP.1hX8tUyNC8XTZ8u6BLuGEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="YouTube">
+            <h3>YouTube</h3>
         </div>
-      </div>
-    </section>
-
-    <!-- Sección de Testimonios -->
-    <section id="testimonios" class="testimonials">
-      <div class="container">
-        <h2>Testimonios</h2>
-        <div class="testimonial-grid">
-          <article class="testimonial">
-            <p>"ViajaZZo hizo de mi viaje una experiencia inolvidable. Servicio impecable y ofertas increíbles."</p>
-            <h4>María López</h4>
-          </article>
-          <article class="testimonial">
-            <p>"Gracias a ViajaZZo pude conocer destinos que siempre soñé. ¡Recomendado al 100%!"</p>
-            <h4>Carlos Pérez</h4>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contact">
-      <div class="container">
-        <h2>Contacto</h2>
-        <form action="#" method="post" class="contact-form">
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="cta-button">Enviar Mensaje</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Pie de página -->
-  <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 ViajaZZo. Todos los derechos reservados.</p>
-      <div class="social">
-        <a href="#" aria-label="Facebook">
-          <img src="https://via.placeholder.com/24" alt="Facebook">
-        </a>
-        <a href="#" aria-label="Twitter">
-          <img src="https://via.placeholder.com/24" alt="Twitter">
-        </a>
-        <a href="#" aria-label="Instagram">
-          <img src="https://via.placeholder.com/24" alt="Instagram">
-        </a>
       </div>
     </div>
+  </section>
+
+  <!-- Sección de Términos y Condiciones -->
+  <section id="terminos" class="terms">
+    <div class="container">
+      <h2>Términos y Condiciones</h2>
+      <p>
+        Al utilizar ViajaZZo, aceptas nuestros <a href="terminos.html">términos y condiciones</a>. Nuestro servicio se encarga de generar y subir videos de ofertas de viaje de forma automática; sin embargo, es responsabilidad del usuario revisar el contenido antes de su publicación final.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <footer>
+    <section class="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:contacto@viajazzo.com">contacto@viajazzo.com</a></p>
+    </section>
   </footer>
 </body>
 </html>
