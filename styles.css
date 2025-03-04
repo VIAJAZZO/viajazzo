@@ -1,181 +1,224 @@
-/* Estilos Generales */
-
-/* Contenido principal */
-.content {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: left;
-}
-
-.content h2 {
-    color: #ff5733;
-    margin-top: 20px;
-}
-
-.content p, .content ul {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.content ul {
-    margin-left: 20px;
-    list-style: disc;
-}
-
-/* Hero Section pequeña */
-.hero-small {
-    background: url('https://source.unsplash.com/1600x600/?travel,nature') no-repeat center center/cover;
-    height: 40vh;
-}
-
-.hero-small .hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Estilos para el enlace activo en la navbar */
-.navbar .active {
-    font-weight: bold;
-    color: #ff5733 !important;
-}
-
-/* Ajuste del footer */
-footer {
-    margin-top: 40px;
-    text-align: center;
-}
-
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilos base */
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Clase contenedora */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
+/* Cabecera y navegación */
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff5733;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav .menu li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav .menu li a:hover {
+  color: #3498db;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #ff5733;
-}
-
-.btn {
-    background: #ff5733;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #e04e2f;
-}
-
-/* Hero Section */
+/* Sección Hero */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    position: relative;
+  background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
 }
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
 }
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero span {
-    color: #ff5733;
-}
-
 .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #2980b9;
 }
 
-/* Features */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px 20px;
-    background: white;
+/* Sección Ofertas */
+.offers {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+.offers h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.offer {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.offer:hover {
+  transform: translateY(-5px);
+}
+.offer img {
+  width: 100%;
+  height: auto;
+}
+.offer h3 {
+  margin: 20px;
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+.offer p {
+  margin: 0 20px 20px;
+  color: #666;
+}
+.offer .cta-button {
+  margin: 0 20px 20px;
 }
 
-.feature {
-    max-width: 300px;
+/* Sección Testimonios */
+.testimonials {
+  padding: 60px 0;
+}
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.testimonial {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  font-style: italic;
+}
+.testimonial h4 {
+  margin-top: 15px;
+  text-align: right;
+  font-weight: normal;
+  color: #2c3e50;
 }
 
-.feature h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #ff5733;
+/* Sección Contacto */
+.contact {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
-/* Footer */
+/* Pie de página */
 footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-    font-size: 14px;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .social a {
+  margin: 0 5px;
+  display: inline-block;
+}
+footer .social a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Media queries para diseño responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5em;
+  }
+  nav .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .offer-grid, .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
 }
